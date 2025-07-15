@@ -40,7 +40,7 @@ const userSchema = new Schema(
             id:this._id,
             userName:this.userName
         }, 
-        process.env.AccessTokenSecret || "dsad445f5wefwefwef8we7fwe89",
+        process.env.AccessTokenSecret,
         {expiresIn:process.env.AccessTokenExpire}
     )};
 
